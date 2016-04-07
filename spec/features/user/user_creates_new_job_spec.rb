@@ -24,4 +24,10 @@ feature 'User creates a new job' do
     expect(page).to have_content job.company
     expect(page).to have_content job.description
   end
+  #scenario 'User have to fill title field' do
+    #visit new_job_path
+    #click_on 'Criar Vaga'
+
+    #expect(page).to have_content ('Campo obrigatório')
+  #end
 end
