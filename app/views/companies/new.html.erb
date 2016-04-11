@@ -1,0 +1,11 @@
+<%= form_for @company do |f| %>
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+  <p><%= f.label :location %>
+  <%= f.text_field :location %></p>
+  <p><%= f.label :mail %>
+  <%= f.text_field :mail %></p>
+  <p><%= f.label :phone %>
+  <%= f.text_field :phone %></p>
+  <p><%= f.submit "Criar Empresa" %></p>
+<% end %>
