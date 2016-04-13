@@ -15,7 +15,7 @@
   <%= f.label :company_id %>
   <%= f.collection_select :company_id, @companies, :id, :name %>
   <%= f.label :category %>
-  <%= f.text_field :category %>
+  <%= f.collection_select :category, @categories, :id, :name %>
   <%= f.label :featured  %>
   <%= f.check_box :featured  %>
   <%= f.label :description %>
