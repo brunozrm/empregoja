@@ -5,7 +5,12 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.create(company_params)
-    redirect_to @company
+    if @company.save
+      redirect_to @company
+    else
+      flash[:notice] = 'Warning! All fields are mandatory.'
+      render :new
+    end
   end
 
   def show
