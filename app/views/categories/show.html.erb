@@ -1,0 +1,6 @@
+<%= @category.name %>
+<% @category.jobs.each do |job| %>
+  <%= job.title %>
+  <%= job.description %>
+  <%= job.location %>
+<% end %>
