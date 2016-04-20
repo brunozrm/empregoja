@@ -21,8 +21,5 @@ feature 'Visitante não visualiza vaga expirada' do
     end
     visit root_path
     expect(page).not_to have_content(job.title)
-    expect(page).not_to have_content(job.location)
-    expect(page).not_to have_content(job.company.name)
-    expect(page).not_to have_content(job.category.name)
   end
 end

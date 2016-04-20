@@ -8,4 +8,8 @@ class Job < ActiveRecord::Base
   def recent?
     Time.zone.now < (created_at + DAYS_TO_BE_RECENT)
   end
+
+  def expired?
+    created_at < 90.days.ago
+  end
 end
